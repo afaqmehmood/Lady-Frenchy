@@ -1,0 +1,67 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "Footer group",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "text_yQz3jG": {
+          "type": "text",
+          "settings": {
+            "title": "À propos de notre marque 🤎",
+            "content": "<p>Lady Frenchy propose une large collection de foulards alliant féminité et raffinement. Découvrez des modèles variés pour sublimer vos tenues au quotidien.</p>",
+            "enable_follow_on_shop": true
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "title": "Service client",
+            "content": "<p><strong>E-mail :</strong> info@ladyfrenchy.com</p><p><strong>Adresse</strong> : 8206 Louisiana Blvd Ne Ste A #2489 Albuquerque 87113 États-Unis</p>",
+            "enable_follow_on_shop": false
+          }
+        },
+        "links_96VcyB": {
+          "type": "links",
+          "settings": {
+            "menu": "pages-legales",
+            "show_menu_title": true
+          }
+        },
+        "links_Nq8iER": {
+          "type": "links",
+          "settings": {
+            "menu": "footer",
+            "show_menu_title": true
+          }
+        }
+      },
+      "block_order": [
+        "text_yQz3jG",
+        "text",
+        "links_96VcyB",
+        "links_Nq8iER"
+      ],
+      "settings": {
+        "show_social_media": false,
+        "show_payment_icons": true,
+        "show_country_selector": false,
+        "show_country_flag": false,
+        "show_country_name": false,
+        "show_locale_selector": false
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

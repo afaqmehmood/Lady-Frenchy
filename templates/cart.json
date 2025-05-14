@@ -1,0 +1,116 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-cart",
+      "blocks": {
+        "totals": {
+          "type": "totals",
+          "settings": {
+            "show_order_weight": false,
+            "show_shipping_text": false
+          }
+        },
+        "checkout_button": {
+          "type": "checkout_button",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "totals",
+        "checkout_button"
+      ],
+      "settings": {
+        "show_shipping_estimator": false,
+        "show_payment_icons": true
+      }
+    },
+    "text_with_icons_WdkNjb": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item_RiN6Uf": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-box",
+            "mobile_icon_width": 36,
+            "icon_width": 44,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "#8b4513",
+            "title": "Livraison Suivie Offerte",
+            "content": ""
+          }
+        },
+        "item_pT7L3m": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-like",
+            "mobile_icon_width": 36,
+            "icon_width": 44,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "#8b4513",
+            "title": "Satisfait ou Remboursé",
+            "content": ""
+          }
+        },
+        "item_tr9nBT": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-chat",
+            "mobile_icon_width": 36,
+            "icon_width": 44,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "#8b4513",
+            "title": "Service Client Premium",
+            "content": ""
+          }
+        },
+        "item_x7kQEM": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-lock",
+            "mobile_icon_width": 36,
+            "icon_width": 44,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "#8b4513",
+            "title": "Paiement Sécurisé",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_RiN6Uf",
+        "item_pT7L3m",
+        "item_tr9nBT",
+        "item_x7kQEM"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "title": "",
+        "heading_tag": "h5",
+        "text_alignment": "center",
+        "icon_spacing": "medium",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "text_with_icons_WdkNjb"
+  ]
+}

@@ -1,0 +1,824 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slide-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Page_d_acceuil_Banniere_Madame_Frenchy.jpg",
+            "mobile_image": "shopify://shop_images/Page_d_acceuil_Banniere_Madame_Frenchy.jpg",
+            "content_max_width": 1200,
+            "mobile_text_position": "place-self-end-start text-start",
+            "desktop_text_position": "sm:place-self-end-start sm:text-start",
+            "subheading": "Dévoilez votre charme",
+            "title": "Votre foulard. Votre signature.",
+            "heading_tag": "h3",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 15,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "image_size": "auto",
+        "controls_type": "none",
+        "transition_type": "fade_with_text",
+        "autoplay": false,
+        "cycle_speed": 4,
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "linear-gradient(60deg, rgba(NaN, NaN, NaN, 1), rgba(23, 29, 33, 1) 98%)"
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "meilleures-ventes",
+        "products": [],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": true,
+        "products_count": 8,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "subheading": "",
+        "title": "Meilleures ventes",
+        "content": "",
+        "link_url": "shopify://collections/meilleures-ventes",
+        "link_text": "Tout afficher",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "testimonials_7KceAY": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_NKKeBE": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/1.jpg",
+            "round_avatar": false,
+            "show_rating": true,
+            "rating": 5,
+            "author": "",
+            "title": "Juliette C.",
+            "content": "<p><em>Je suis ravie de mon achat, le foulard tant attendu a parfaitement répondu à mes attentes. Il est doux, fluide et très agréable à porter. Il tient bien en place, que ce soit autour du cou ou dans les cheveux. La qualité est au rendez-vous, je recommande !</em></p>"
+          }
+        },
+        "testimonial_hbYfUT": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/10.jpg",
+            "round_avatar": false,
+            "show_rating": true,
+            "rating": 5,
+            "author": "",
+            "title": "Susan D.",
+            "content": "<p><em>Quelle belle découverte ! J'avais peur qu'il glisse trop dans mes cheveux, mais il tient parfaitement toute la journée. Les couleurs sont fidèles aux photos et apportent une vraie touche d'élégance.</em></p>"
+          }
+        },
+        "testimonial_aiKUJA": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/6.jpg",
+            "round_avatar": false,
+            "show_rating": true,
+            "rating": 5,
+            "author": "",
+            "title": "Amélie L.",
+            "content": "<p><em>Dès que je l’ai mis autour de mon cou, j’ai adoré ! Le tissu est super agréable, il tombe bien sans faire de plis. J’ai pris la taille 70x70 cm et c'est parfait pour un effet chic et volumineux.</em></p>"
+          }
+        },
+        "testimonial_bNCNbM": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/11.jpg",
+            "round_avatar": false,
+            "show_rating": true,
+            "rating": 5,
+            "author": "",
+            "title": "Sandrine R.",
+            "content": "<p><em>Ravie de mon nouveau foulard ! La qualité est au rendez-vous, il ne se froisse pas facilement et garde son éclat même après lavage. Idéal pour une touche d’élégance au quotidien ou pour une occasion spéciale.</em></p>"
+          }
+        },
+        "testimonial_rcDJBU": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/5.jpg",
+            "round_avatar": false,
+            "show_rating": true,
+            "rating": 5,
+            "author": "",
+            "title": "Zoé C.",
+            "content": "<p><em>Ce foulard est déjà devenu un incontournable de ma garde-robe. Il est léger et apporte une touche de couleur élégante à mes tenues. J’apprécie aussi qu’il soit facile à entretenir.</em></p>"
+          }
+        },
+        "testimonial_kpdxjj": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/3.jpg",
+            "round_avatar": false,
+            "show_rating": true,
+            "rating": 5,
+            "author": "",
+            "title": "Laetitia R.",
+            "content": "<p><em>J’ai craqué pour ce foulard à motifs colorés et je ne suis pas déçue ! Il est aussi beau en vrai que sur les photos. Le tissu est soyeux et agréable au toucher. Un vrai coup de cœur !</em></p>"
+          }
+        },
+        "testimonial_hdBAew": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/4.jpg",
+            "round_avatar": false,
+            "show_rating": true,
+            "rating": 5,
+            "author": "",
+            "title": "Céline M.",
+            "content": "<p><em>Un véritable trésor dans ma garde-robe. La qualité est bien meilleure que ce que j’imaginais pour ce prix ! Il est bien cousu, les finitions sont impeccables et il apporte une vraie touche raffinée.</em></p>"
+          }
+        },
+        "testimonial_JrpiYm": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/7.jpg",
+            "round_avatar": false,
+            "show_rating": true,
+            "rating": 5,
+            "author": "",
+            "title": "Dorothée M.",
+            "content": "<p><em>Les couleurs sont vraiment éclatantes et le tissu est très doux. Je l’ai porté toute la journée et il ne s’est pas froissé. Il se marie avec plein de tenues, je suis conquise !</em></p>"
+          }
+        },
+        "testimonial_iWrpLL": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/2.jpg",
+            "round_avatar": false,
+            "show_rating": true,
+            "rating": 5,
+            "author": "",
+            "title": "Céline D.",
+            "content": "<p><em>Je viens de recevoir mon foulard et je suis absolument ravie ! La matière est légère et fluide, et il est parfait pour accessoiriser une tenue. Livraison rapide et bien emballé, rien à redire.</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_NKKeBE",
+        "testimonial_hbYfUT",
+        "testimonial_aiKUJA",
+        "testimonial_bNCNbM",
+        "testimonial_rcDJBU",
+        "testimonial_kpdxjj",
+        "testimonial_hdBAew",
+        "testimonial_JrpiYm",
+        "testimonial_iWrpLL"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_testimonials": false,
+        "subheading": "",
+        "title": "Des clientes satisfaites témoignent",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "testimonial_card_background": "",
+        "testimonial_card_text_color": ""
+      }
+    },
+    "testimonials_AdAXdt": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_YwK9Lt": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/1.jpg",
+            "round_avatar": false,
+            "show_rating": true,
+            "rating": 5,
+            "author": "",
+            "title": "Juliette C.",
+            "content": "<p><em>Je suis ravie de mon achat, le foulard tant attendu a parfaitement répondu à mes attentes. Confort, style et qualité, tout y est</em></p>"
+          }
+        },
+        "testimonial_CEYwea": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/10.jpg",
+            "round_avatar": false,
+            "show_rating": true,
+            "rating": 5,
+            "author": "",
+            "title": "Susan D.",
+            "content": "<p><em>Quel plaisir d'avoir découvert ce petit bijou, j'en suis déjà totalement séduite</em></p>"
+          }
+        },
+        "testimonial_7Un9WG": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/6.jpg",
+            "round_avatar": false,
+            "show_rating": true,
+            "rating": 5,
+            "author": "",
+            "title": "Amélie L.",
+            "content": "<p><em>Aussitôt posé autour de mon cou, j'adore. Doux et confortable, il est déjà devenu mon accessoire préféré</em></p>"
+          }
+        },
+        "testimonial_agTnJx": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/11.jpg",
+            "round_avatar": false,
+            "show_rating": true,
+            "rating": 5,
+            "author": "",
+            "title": "Sandrine R.",
+            "content": "<p><em>Ravie de mon nouveau foulard ! La qualité, le confort et le style sont au rendez-vous. Idéal pour tous les jours et les occasions spéciales</em></p>"
+          }
+        },
+        "testimonial_mQAPWN": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/5.jpg",
+            "round_avatar": false,
+            "show_rating": true,
+            "rating": 5,
+            "author": "",
+            "title": "Zoé C.",
+            "content": "<p><em>Ce foulard est déjà devenu un incontournable de ma garde-robe. Il est doux, confortable et d'une élégance exceptionnelle</em></p>"
+          }
+        },
+        "testimonial_Qn4WzM": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/3.jpg",
+            "round_avatar": false,
+            "show_rating": true,
+            "rating": 5,
+            "author": "",
+            "title": "Laetitia R.",
+            "content": "<p><em>Je suis tombée amoureuse de ce magnifique foulard à motifs colorés. Un véritable régal pour les yeux</em></p>"
+          }
+        },
+        "testimonial_NNQR8G": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/4.jpg",
+            "round_avatar": false,
+            "show_rating": true,
+            "rating": 5,
+            "author": "",
+            "title": "Céline M.",
+            "content": "<p><em>Un véritable trésor dans ma garde-robe. Je suis extrêmement contente de mon achat et je le recommande sans hésitation</em></p>"
+          }
+        },
+        "testimonial_aY47RR": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/7.jpg",
+            "round_avatar": false,
+            "show_rating": true,
+            "rating": 5,
+            "author": "",
+            "title": "Dorothée M.",
+            "content": "<p><em>Le foulard est tout simplement époustouflant. Ses couleurs vives et son toucher me charment à chaque fois que je le porte</em></p>"
+          }
+        },
+        "testimonial_EiUDR6": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/2.jpg",
+            "round_avatar": false,
+            "show_rating": true,
+            "rating": 5,
+            "author": "",
+            "title": "Céline D.",
+            "content": "<p><em>Je viens tout juste de recevoir mon nouveau foulard et je suis absolument conquise</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_YwK9Lt",
+        "testimonial_CEYwea",
+        "testimonial_7Un9WG",
+        "testimonial_agTnJx",
+        "testimonial_mQAPWN",
+        "testimonial_Qn4WzM",
+        "testimonial_NNQR8G",
+        "testimonial_aY47RR",
+        "testimonial_EiUDR6"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "stack_testimonials": false,
+        "subheading": "",
+        "title": "Elles nous ont fait confiance ! ❤️",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "testimonial_card_background": "",
+        "testimonial_card_text_color": ""
+      }
+    },
+    "featured_collection_CTVdGx": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "grands-foulards",
+        "products": [],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_count": 8,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "subheading": "",
+        "title": "Grands foulards",
+        "content": "",
+        "link_url": "shopify://collections/grands-foulards",
+        "link_text": "Tout afficher",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "rgba(0,0,0,0)",
+        "heading_color": "rgba(0,0,0,0)",
+        "heading_gradient": "",
+        "product_card_background": "rgba(0,0,0,0)",
+        "product_card_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "featured_collection_mwb9WJ": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "petits-foulards",
+        "products": [],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_count": 8,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "subheading": "",
+        "title": "Petits foulards",
+        "content": "",
+        "link_url": "shopify://collections/petits-foulards",
+        "link_text": "Tout afficher",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "rgba(0,0,0,0)",
+        "product_card_text_color": ""
+      }
+    },
+    "featured_collection_EM9qNX": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "foulards-longs-et-fins",
+        "products": [],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_count": 8,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "subheading": "",
+        "title": "Foulards longs et fins",
+        "content": "",
+        "link_url": "shopify://collections/foulards-longs-et-fins",
+        "link_text": "Tout afficher",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "rgba(0,0,0,0)",
+        "product_card_text_color": ""
+      }
+    },
+    "featured_collection_PGqUjK": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "foulards-plisses",
+        "products": [],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_count": 8,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "subheading": "",
+        "title": "Foulards plissés ",
+        "content": "",
+        "link_url": "shopify://collections/foulards-plisses",
+        "link_text": "Tout afficher",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "rgba(0,0,0,0)",
+        "product_card_text_color": ""
+      }
+    },
+    "faq_eBE7VY": {
+      "type": "faq",
+      "blocks": {
+        "item_RzgVXK": {
+          "type": "item",
+          "settings": {
+            "title": "Quelle est la composition du foulard ?",
+            "content": "<p>Nos foulards sont confectionnés à <strong>100 % en polyester satiné</strong> de haute qualité, offrant la douceur et l'élégance d’un tissu soyeux.</p>"
+          }
+        },
+        "item_tYNFNN": {
+          "type": "item",
+          "settings": {
+            "title": "Le foulard est-il hypoallergénique ?",
+            "content": "<p>Le polyester satiné est généralement bien toléré, mais en cas de doute, nous vous conseillons de tester le foulard sur une petite zone de peau avant de le porter.</p>"
+          }
+        },
+        "item_gQidET": {
+          "type": "item",
+          "settings": {
+            "title": "Le foulard est-il respirant ?",
+            "content": "<p>Nos foulards en polyester satiné sont <strong>légers et respirants</strong>, offrant confort et luxe tout au long de la journée.</p><p></p>"
+          }
+        },
+        "item_U4YcND": {
+          "type": "item",
+          "settings": {
+            "title": "Le foulard se froisse-t-il facilement ?",
+            "content": "<p>Le polyester satiné est <strong>moins sujet aux plis que la soie pure</strong>. Pour préserver leur aspect, il est recommandé de les ranger soigneusement ou de les suspendre.</p><p></p>"
+          }
+        },
+        "item_qYxRDh": {
+          "type": "item",
+          "settings": {
+            "title": "Comment entretenir mon foulard ?",
+            "content": "<p>Faciles à entretenir, nos foulards satinés peuvent être <strong>lavés en machine à basse température</strong>. Nous conseillons un <strong>lavage délicat</strong> pour préserver la qualité du tissu.</p><p></p>"
+          }
+        },
+        "item_VrJmqz": {
+          "type": "item",
+          "settings": {
+            "title": "Puis-je repasser le foulard ?",
+            "content": "<p>Oui, vous pouvez repasser le foulard satiné à <strong>basse température</strong> pour éliminer les plis éventuels.</p><p></p>"
+          }
+        },
+        "item_VNXHXE": {
+          "type": "item",
+          "settings": {
+            "title": "Le foulard déteint-il au lavage ?",
+            "content": "<p>Nos foulards satinés <strong>résistent bien à la décoloration</strong>. Pour les premières fois, nous recommandons de <strong>laver les couleurs foncées séparément</strong>.</p><p></p>"
+          }
+        },
+        "item_gMjpxq": {
+          "type": "item",
+          "settings": {
+            "title": "Le foulard est-il adapté pour toutes les saisons ?",
+            "content": "<p><strong>Absolument !</strong> Grâce à leur <strong>légèreté et respirabilité</strong>, nos foulards satinés conviennent <strong>à toutes les saisons</strong>.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_RzgVXK",
+        "item_tYNFNN",
+        "item_gQidET",
+        "item_U4YcND",
+        "item_qYxRDh",
+        "item_VrJmqz",
+        "item_VNXHXE",
+        "item_gMjpxq"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Questions fréquentes",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "faq_MPJiQp": {
+      "type": "faq",
+      "blocks": {
+        "item_ynCCpj": {
+          "type": "item",
+          "settings": {
+            "title": "Quelle est la matière du foulard ?",
+            "content": "<p>Nos foulards sont confectionnés en <strong>tissu satiné 100 % polyester</strong>, soigneusement sélectionné pour offrir une <strong>sensation douce, fluide et élégante, similaire à la soie</strong>. </p><p>Facile à entretenir et résistant, il conserve <strong>son éclat et sa texture même après plusieurs lavages</strong>.</p>"
+          }
+        },
+        "item_nQG6yf": {
+          "type": "item",
+          "settings": {
+            "title": "Le foulard tient-il bien en place sur les cheveux ?",
+            "content": "<p>Nos foulards en satin sont doux et lisses, ce qui peut les rendre <strong>plus glissants que des tissus texturés</strong>. Pour une meilleure tenue, nous recommandons :</p><p><strong>L'utilisation d'un bandeau en dessous</strong> pour éviter qu’il ne glisse.</p><p><strong>L'ajout d’épingles discrètes</strong> pour une fixation parfaite.</p><p><strong>Le choix d’un nouage adapté</strong>, comme un turban bien serré ou un double nœud.</p>"
+          }
+        },
+        "item_CP6x6W": {
+          "type": "item",
+          "settings": {
+            "title": "La couleur du foulard est-elle fidèle aux photos ?",
+            "content": "<p>Oui, nos photos reflètent <strong>fidèlement les couleurs réelles</strong> du produit. Toutefois, il peut y avoir <strong>un léger décalage</strong> en fonction de l’éclairage et des réglages d’écran. </p><p>Nous faisons en sorte que chaque image soit la plus représentative possible pour vous offrir un aperçu précis du produit.</p>"
+          }
+        },
+        "item_rVmzD3": {
+          "type": "item",
+          "settings": {
+            "title": "Quelles sont les dimensions du foulard et à quoi sert-il ?",
+            "content": "<p>Nos foulards sont disponibles en plusieurs tailles adaptées à tous les styles et usages :</p><p><strong>90x90 cm</strong> → Parfait pour un look chic autour du cou, un turban, ou en accessoire mode.</p><p><strong>70x70 cm</strong> → Idéal pour attacher les cheveux, en bandeau ou sur un sac.</p><p><strong>55x55 cm</strong> → Format polyvalent pour le cou, les poignets ou comme accessoire cheveux.</p><p><strong>50x50 cm</strong> → Petit format idéal en ceinture, sur un sac ou au poignet.</p><p><strong>9.5x100 cm</strong> → Long et étroit, parfait pour une queue de cheval, en ruban ou pour styliser un sac.</p>"
+          }
+        },
+        "item_UWTXR7": {
+          "type": "item",
+          "settings": {
+            "title": "Le motif est-il imprimé des deux côtés ?",
+            "content": "<p>Nos foulards sont imprimés sur <strong>une seule face</strong>, avec un revers discret qui se fond élégamment dans le style du foulard. Cela permet de conserver <strong>un effet soyeux et brillant tout en garantissant une belle fluidité du tissu</strong>.</p>"
+          }
+        },
+        "item_D6cThA": {
+          "type": "item",
+          "settings": {
+            "title": "Comment entretenir mon foulard ?",
+            "content": "<p>Nos foulards en satin sont <strong>faciles à entretenir</strong> :</p><p><strong>Lavage à la main ou en machine à 30°C</strong>, cycle délicat.</p><p><strong>Séchage à l’air libre</strong> pour préserver la brillance du tissu.</p><p><strong>Ne pas utiliser de sèche-linge</strong> pour éviter tout endommagement.</p>"
+          }
+        },
+        "item_Xadtj3": {
+          "type": "item",
+          "settings": {
+            "title": "Puis-je repasser le foulard ?",
+            "content": "<p>Oui, mais <strong>à basse température</strong> (repassage doux) ou avec <strong>un défroisseur vapeur</strong> pour éliminer les plis sans abîmer le tissu.</p>"
+          }
+        },
+        "item_PKQDaK": {
+          "type": "item",
+          "settings": {
+            "title": "Le foulard déteint-il au lavage ?",
+            "content": "<p>Nos foulards sont <strong>traités pour résister à la décoloration</strong>. Toutefois, pour <strong>les couleurs foncées</strong>, nous recommandons de les laver séparément lors des premiers lavages.</p>"
+          }
+        },
+        "item_LmLHUK": {
+          "type": "item",
+          "settings": {
+            "title": "Le foulard est-il hypoallergénique ?",
+            "content": "<p>Le polyester satiné est généralement bien toléré par la peau. Cependant, si vous avez une peau sensible, nous vous conseillons <strong>de tester le foulard sur une petite zone</strong> avant de le porter.</p>"
+          }
+        },
+        "item_piJ8ea": {
+          "type": "item",
+          "settings": {
+            "title": "Le foulard est-il adapté pour toutes les saisons ?",
+            "content": "<p>Oui ! Nos foulards en satin sont <strong>légers et respirants</strong>, ce qui les rend parfaits <strong>en toute saison</strong> :</p><p>En été, ils ajoutent <strong>une touche élégante sans tenir chaud</strong>.</p><p>En hiver, ils <strong>complètent une tenue tout en apportant du style</strong>.</p>"
+          }
+        },
+        "item_UBtXic": {
+          "type": "item",
+          "settings": {
+            "title": "Comment est emballé le foulard ? Peut-on l’offrir en cadeau ?",
+            "content": "<p>Nos foulards sont <strong>soigneusement emballés</strong> dans un film protecteur et une pochette, garantissant <strong>une protection optimale</strong> lors du transport. </p><p><strong>Nous travaillons actuellement sur une option coffret cadeau premium</strong>, qui sera bientôt disponible pour une présentation encore plus élégante.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_ynCCpj",
+        "item_nQG6yf",
+        "item_CP6x6W",
+        "item_rVmzD3",
+        "item_UWTXR7",
+        "item_D6cThA",
+        "item_Xadtj3",
+        "item_PKQDaK",
+        "item_LmLHUK",
+        "item_piJ8ea",
+        "item_UBtXic"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Questions fréquentes",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "multiple-images-with-text": {
+      "type": "multiple-images-with-text",
+      "blocks": {
+        "1664424486a2b084ab-0": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Page_d_accueil_Madame_Frenchy.jpg",
+            "image_rotation_degrees": 0,
+            "subheading": "",
+            "title": "L'Essence du Raffinement",
+            "content": "<p>Le foulard est un accessoire intemporel, alliant style et fonctionnalité. Léger ou épais, soyeux ou texturé, il s’adapte à toutes les occasions, apportant une touche d’élégance et de confort.</p><p>Qu’il soit enroulé, drapé ou noué, il complète une tenue tout en offrant une protection contre le froid ou le soleil. Polyvalent et raffiné, il trouve sa place dans toutes les garde-robes.</p>",
+            "button_url": "",
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "1664424486a2b084ab-0"
+      ],
+      "settings": {
+        "full_width": true,
+        "images_layout": "collage",
+        "collage_images_alignment": "middle",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
+    "blog_posts_L8hj7c": {
+      "type": "blog-posts",
+      "blocks": {
+        "blog_nmKUbh": {
+          "type": "blog",
+          "settings": {
+            "blog": "blog-foulard",
+            "posts_count": 3,
+            "stack_items": false
+          }
+        }
+      },
+      "block_order": [
+        "blog_nmKUbh"
+      ],
+      "name": "Blog posts",
+      "settings": {
+        "full_width": true,
+        "show_excerpt": true,
+        "show_date": false,
+        "show_author": false,
+        "show_comments_count": false,
+        "show_category": false,
+        "subheading": "",
+        "title": "Nos articles de blog",
+        "content": "",
+        "link_url": "",
+        "link_text": "Tout afficher",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "text_with_icons_R4CMHK": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item_g6zpDH": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-box",
+            "mobile_icon_width": 36,
+            "icon_width": 44,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "#8b4513",
+            "title": "Livraison Suivie Offerte",
+            "content": ""
+          }
+        },
+        "item_ym3Xg6": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-like",
+            "mobile_icon_width": 36,
+            "icon_width": 44,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "#8b4513",
+            "title": "Satisfait ou Remboursé",
+            "content": ""
+          }
+        },
+        "item_DVXFLg": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-chat",
+            "mobile_icon_width": 36,
+            "icon_width": 44,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "#8b4513",
+            "title": "Service Client Premium",
+            "content": ""
+          }
+        },
+        "item_FnKp6D": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-lock",
+            "mobile_icon_width": 36,
+            "icon_width": 44,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "#8b4513",
+            "title": "Paiement Sécurisé",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_g6zpDH",
+        "item_ym3Xg6",
+        "item_DVXFLg",
+        "item_FnKp6D"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": true,
+        "title": "",
+        "heading_tag": "h4",
+        "text_alignment": "center",
+        "icon_spacing": "small",
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "featured-collection",
+    "testimonials_7KceAY",
+    "testimonials_AdAXdt",
+    "featured_collection_CTVdGx",
+    "featured_collection_mwb9WJ",
+    "featured_collection_EM9qNX",
+    "featured_collection_PGqUjK",
+    "faq_eBE7VY",
+    "faq_MPJiQp",
+    "multiple-images-with-text",
+    "blog_posts_L8hj7c",
+    "text_with_icons_R4CMHK"
+  ]
+}
