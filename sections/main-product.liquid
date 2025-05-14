@@ -129,19 +129,7 @@ quick buy information in a template, that will be extracted in JS, but ensure it
     {%- endfor -%}
   </div>
 </template>
-<script>
-  window.promoProductsInfo = {
-    "enabled": {{ section.settings.promo_products }},
-    "product_limit": {{ section.settings.qty_limit }},
-    "product_ids": [
-      {% if section.settings.promo_products_list != blank %}
-        {% for product in section.settings.promo_products_list %}
-          {{ product.selected_or_first_available_variant.id }}{% unless forloop.last %},{% endunless %}
-        {% endfor %}
-      {% endif %}
-    ]
-  }
-</script>
+
 
 {% schema %}
 {
@@ -1140,32 +1128,6 @@ quick buy information in a template, that will be extracted in JS, but ensure it
     }
   ],
   "settings": [
-    {
-      "type": "header",
-      "content": "Promo products"
-    },
-    {
-      "type": "checkbox",
-      "id": "promo_products",
-      "label": "Enable promo products to cart",
-      "default": true
-    },
-    {
-      "type": "range",
-      "id": "qty_limit",
-      "label": "Quantity limit",
-      "min": 1,
-      "max": 5,
-      "step": 1,
-      "unit": "pcs",
-      "default": 3,
-      "info": "This will be used to trigger add promo products to cart"
-    },
-    {
-      "type": "product_list",
-      "id": "promo_products_list",
-      "label": "Products list"
-    },
     {
       "type": "checkbox",
       "id": "full_width",

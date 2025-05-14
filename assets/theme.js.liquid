@@ -1851,6 +1851,7 @@ var CartNotificationDrawer = class extends Drawer {
     }
     const tempContent = document.createElement("div");
     tempContent.innerHTML = event.detail.cart["sections"]["variant-added"];
+    console.log(event.datail.cart);
     this.replaceChildren(...tempContent.querySelector(".shopify-section").children);
     this.show();
   }
@@ -2007,11 +2008,7 @@ var LineItemQuantity = class extends HTMLElement {
     this._changeLineItemQuantity(url.searchParams.get("id"), parseInt(url.searchParams.get("quantity")));
   }
   async _changeLineItemQuantity(lineKey, targetQuantity) {
-    // const bonusProducts = [
-    //     { id: 'BONUS_PRODUCT_1', quantity: 1 },
-    //     { id: 'BONUS_PRODUCT_2', quantity: 1 },
-    //     { id: 'BONUS_PRODUCT_3', quantity: 1 }
-    // ];
+    
     if (window.themeVariables.settings.pageType === "cart") {
       window.location.href = `${Shopify.routes.root}cart/change?id=${lineKey}&quantity=${targetQuantity}`;
     } else {
@@ -2045,8 +2042,11 @@ var LineItemQuantity = class extends HTMLElement {
           cart: cartContent
         }
       }));
+      _updateBonusProductsToCart(cartContent);
+
     }
   }
+
 };
 if (!window.customElements.get("line-item-quantity")) {
   window.customElements.define("line-item-quantity", LineItemQuantity);
@@ -2792,6 +2792,7 @@ var ProductForm = class extends HTMLFormElement {
         return window.location.href = `${Shopify.routes.root}cart`;
       }
       const cartContent = await (await fetch(`${Shopify.routes.root}cart.js`)).json();
+      
       cartContent["sections"] = responseJson["sections"];
       this.dispatchEvent(new CustomEvent("variant:add", {
         bubbles: true,
@@ -2807,6 +2808,7 @@ var ProductForm = class extends HTMLFormElement {
           cart: cartContent
         }
       }));
+      _updateBonusProductsToCart(cartContent);
     } else {
       this.dispatchEvent(new CustomEvent("cart:error", {
         bubbles: true,
@@ -3413,6 +3415,7 @@ var QuickBuyDrawer = class extends Drawer {
     });
     this._hasLoaded = false;
   }
+  
 };
 if (!window.customElements.get("quick-buy-drawer")) {
   window.customElements.define("quick-buy-drawer", QuickBuyDrawer);
@@ -4296,3 +4299,130 @@ export {
   throttle,
   waitForEvent
 };
+
+
+function _updateBonusProductsToCart(cart) {
+    const cartCount = cart.item_count;
+    const is_enabled = promoProductsInfo.enabled;
+    const _bonusProducts = Array.from(promoProductsInfo.bonusProducts);
+    if (!is_enabled) return;
+
+    const promoVariantIds = _bonusProducts.map(p => p.id); // or product_id
+    const promoItems = cart.items.filter(item => promoVariantIds.includes(item.variant_id));
+    const nonPromoItems = cart.items.filter(item => !promoVariantIds.includes(item.variant_id));
+
+    const nonPromoQtyTotal = nonPromoItems.reduce((sum, item) => sum + item.quantity, 0);
+
+    if (nonPromoQtyTotal >= promoProductsInfo.product_limit) {
+      _addBonusProducts(_bonusProducts, cart);
+    }
+    if(nonPromoQtyTotal < promoProductsInfo.product_limit ) {
+      _removeBonusProducts(_bonusProducts, cart);
+    }
+    if(nonPromoQtyTotal == 0) _clearCart(cart);
+}
+
+  // Recursive function to add bonus products sequentially
+function _addBonusProducts(products, cart) {
+  if (sessionStorage.getItem('bonusProductsAdded')) return;
+  if (products.length === 0){
+    sessionStorage.setItem('bonusProductsAdded', 'true');
+    
+    document.documentElement.dispatchEvent(new CustomEvent("cart:change", {
+      bubbles: true,
+      detail: {
+        baseEvent: "line-item:change",
+        cart: cart
+      }
+    }));
+    document.documentElement.dispatchEvent(new CustomEvent("cart:refresh", {
+        bubbles: true
+    }));
+    // document.querySelectorAll("cart-count")[0].innerText = cart.item_count;
+    return;
+  }  // Base case: stop when no products left
+  const cartItems = cart.items;
+  const product = products.shift(); // Removes & returns the first item
+  
+  const foundItem = Array.from(cartItems).find(item => item.variant_id == product.id);
+  const item_key = foundItem ? foundItem.key : null;  
+  // Add to cart (replace with your platform's cart API)
+  
+  // Shopify cart API call
+  if (item_key) _addBonusProducts(products, cart);
+  
+  // Shopify cart API call
+  fetch('/cart/add.js', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+          id: product.id,
+          quantity: product.quantity
+      })
+  }).then(() => {
+      // After successful addition, add the next product
+      _addBonusProducts(products, cart);
+  }).catch(error => {
+      console.error('Failed to add bonus product:', error);
+  });
+}
+
+function _removeBonusProducts(products, cart) {
+  const cartItems = cart.items;
+  if (products.length === 0) {
+    sessionStorage.removeItem('bonusProductsAdded');
+    document.documentElement.dispatchEvent(new CustomEvent("cart:change", {
+      bubbles: true,
+      detail: {
+        baseEvent: "line-item:change",
+        cart: cart
+      }
+    }));
+    document.documentElement.dispatchEvent(new CustomEvent("cart:refresh", {
+      bubbles: true
+    }));
+    // document.querySelectorAll("cart-count")[0].innerText = cart.item_count;
+    return;
+  }  // Base case: stop when no products left
+  const product = products.shift(); // Removes & returns the first item
+
+  const foundItem = Array.from(cartItems).find(item => item.variant_id == product.id);
+  const item_key = foundItem ? foundItem.key : null;
+  // Add to cart (replace with your platform's cart API)
+  
+  // Shopify cart API call
+  if (!item_key) _removeBonusProducts(products, cart);
+  fetch('/cart/change.js', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+        id: item_key,
+        quantity: 0
+    })
+    
+  }).then(() => {
+      // After successful addition, add the next product
+      _removeBonusProducts(products, cart);
+  }).catch(error => {
+      console.error('Failed to add bonus product:', error);
+  });
+}
+
+function _clearCart(cart) {
+  fetch('/cart/clear.js', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+  }).then(() => {
+    sessionStorage.removeItem('bonusProductsAdded');
+    document.documentElement.dispatchEvent(new CustomEvent("cart:change", {
+      bubbles: true,
+      detail: {
+        baseEvent: "line-item:change",
+        cart: cart
+      }
+    }));
+    document.documentElement.dispatchEvent(new CustomEvent("cart:refresh", {
+      bubbles: true
+    }));
+  })
+}

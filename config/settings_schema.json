@@ -8,6 +8,37 @@
     "theme_support_url": "https://support.maestrooo.com/article/203-contact-us"
   },
   {
+    "name": "Promo Products",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Promo products"
+      },
+      {
+        "type": "checkbox",
+        "id": "promo_products",
+        "label": "Enable promo products to cart",
+        "default": true
+      },
+      {
+        "type": "range",
+        "id": "qty_limit",
+        "label": "Quantity limit",
+        "min": 1,
+        "max": 5,
+        "step": 1,
+        "unit": "pcs",
+        "default": 3,
+        "info": "This will be used to trigger add promo products to cart"
+      },
+      {
+        "type": "product_list",
+        "id": "promo_products_list",
+        "label": "Products list"
+      },
+    ]
+  },
+  {
     "name": "Appearance and spacing",
     "settings": [
       {

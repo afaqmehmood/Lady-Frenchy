@@ -169,6 +169,13 @@
         "image_3TjV3M"
       ],
       "settings": {
+        "promo_products": true,
+        "qty_limit": 3,
+        "promo_products_list": [
+          "bandeau-cheveux-femme",
+          "anneau-de-foulard-dore",
+          "lot-de-12-chouchous-en-velours"
+        ],
         "full_width": true,
         "show_fixed_add_to_cart": true,
         "desktop_media_width": 55,
