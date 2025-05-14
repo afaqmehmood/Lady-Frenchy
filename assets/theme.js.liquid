@@ -2007,6 +2007,11 @@ var LineItemQuantity = class extends HTMLElement {
     this._changeLineItemQuantity(url.searchParams.get("id"), parseInt(url.searchParams.get("quantity")));
   }
   async _changeLineItemQuantity(lineKey, targetQuantity) {
+    // const bonusProducts = [
+    //     { id: 'BONUS_PRODUCT_1', quantity: 1 },
+    //     { id: 'BONUS_PRODUCT_2', quantity: 1 },
+    //     { id: 'BONUS_PRODUCT_3', quantity: 1 }
+    // ];
     if (window.themeVariables.settings.pageType === "cart") {
       window.location.href = `${Shopify.routes.root}cart/change?id=${lineKey}&quantity=${targetQuantity}`;
     } else {
@@ -2768,6 +2773,7 @@ var ProductForm = class extends HTMLFormElement {
     const formData = new FormData(this);
     formData.set("sections", sectionsToBundle.join(","));
     formData.set("sections_url", `${Shopify.routes.root}variants/${this.id.value}`);
+
     const response = await fetch(`${Shopify.routes.root}cart/add.js`, {
       body: formData,
       method: "POST",
